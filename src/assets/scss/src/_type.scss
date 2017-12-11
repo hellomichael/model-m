@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Type
+   ========================================================================== */
+body {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-light;
+  color: $green;
+  @include rem(font-size, $font-size-root);
+  @include rem(line-height, $font-height-root);
+}
+
+/* ==========================================================================
+  Headings
+   ========================================================================== */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin: 0 0 $gutter-xs;
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-light;
+}
+
+h1, .h1 {
+  @include rem(font-size, $h2-size);
+  @include rem(line-height, $h2-height);
+
+  @include media-breakpoint-up(md) {
+    @include rem(font-size, $h1-size);
+    @include rem(line-height, $h1-height);
+  }
+}
+
+h2, .h2 {
+  @include rem(font-size, $h3-size);
+  @include rem(line-height, $h3-height);
+
+  @include media-breakpoint-up(md) {
+    @include rem(font-size, $h2-size);
+    @include rem(line-height, $h2-height);
+  }
+}
+
+h3, .h3 {
+  @include rem(font-size, $h4-size);
+  @include rem(line-height, $h4-height);
+
+  @include media-breakpoint-up(md) {
+    @include rem(font-size, $h3-size);
+    @include rem(line-height, $h3-height);
+  }
+}
+
+h4, .h4 {
+  @include rem(font-size, $h5-size);
+  @include rem(line-height, $h5-height);
+
+  @include media-breakpoint-up(md) {
+    @include rem(font-size, $h4-size);
+    @include rem(line-height, $h4-height);
+  }
+}
+
+h5, .h5 {
+  @include rem(font-size, $h6-size);
+  @include rem(line-height, $h6-height);
+
+  @include media-breakpoint-up(md) {
+    @include rem(font-size, $h5-size);
+    @include rem(line-height, $h5-height);
+  }
+}
+
+h6, .h6 {
+  @include rem(font-size, $h6-size);
+  @include rem(line-height, $h6-height);
+}
+
+h4, .h4, h5, .h5, h6, .h6 {
+  margin: 0 0 $gutter-xxs;
+}
+
+small {
+  display: inline-block;
+  @include rem(font-size, $small-size);
+  @include rem(line-height, $small-height);
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+/* ==========================================================================
+  Paragraphs, Lists
+   ========================================================================== */
+p, ul, ol {
+  margin: 0 0 $gutter-md;
+}
+
+ul, ol {
+  padding: 0 0 0 $gutter-md/2;
+}
+
+hr {
+  display: block;
+  margin: 0 0 $gutter-sm;
+}
+
+i {
+  @extend %hide-text;
+  display: inline-block;
+}

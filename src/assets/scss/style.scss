@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+:global {
+  @import 'variables';
+
+  // Vendors
+  @import 'vendor/bootstrap/bootstrap';
+
+  // Utilities
+  @import 'mixins';
+  @import 'placeholders';
+
+  // Base
+  @import 'src/base';
+  @import 'src/type';
+}

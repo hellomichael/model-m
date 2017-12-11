@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Placeholders
+   ========================================================================== */
+// Pseudo elements
+%before-after {
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+  }
+}
+
+%before {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: inline-block;
+  }
+}
+
+%after {
+  position: relative;
+
+  &:after {
+    content: '';
+    display: inline-block;
+  }
+}
+
+// Layout
+%center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+%center-horizontally {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+%center-vertically {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%flex-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  > * {
+    flex: 1;
+  }
+}
+
+%flex-inline {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+%flex-justify {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Text
+%hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
