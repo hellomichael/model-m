@@ -58,7 +58,7 @@ class Landing extends Component {
             vr-mode-ui={ { enabled: false } }
           >
             <Entity
-              obj-model={ 'obj: url(../models/keyboard.obj); ' }
+              obj-model={ 'obj: url(https://hellomichael.github.io/model-m/models/keyboard.obj); ' }
               position={ { x: 0, y: 0, z: -50 } }
               rotation={ { x: 0, y: 720 * this.state.progress / 100, z: 0 } }
               wireframe={ true }
