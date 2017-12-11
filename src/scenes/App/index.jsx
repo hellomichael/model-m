@@ -9,7 +9,7 @@ import '../../assets/scss/style.scss'
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={ '/model-m' }>
         <Switch>
           <Route
             exact
